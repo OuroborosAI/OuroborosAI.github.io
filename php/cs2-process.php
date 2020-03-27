@@ -1,7 +1,7 @@
 <?php
 $name = $_POST["cs2Name"];
 $email = $_POST["cs2Email"];
-$institution = $_POST["cs2Institution"];
+$phone_number = $_POST["cs2PhoneNum"];
 
 $EmailTo = "ouroborosai@protonmail.ch";
 $Subject = "Message from " . $name;
@@ -15,8 +15,8 @@ $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
 
-$Body .= "Institution: ";
-$Body .= $institution;
+$Body .= "PhoneNum: ";
+$Body .= $phone_number;
 $Body .= "\n";
 
 // send email
